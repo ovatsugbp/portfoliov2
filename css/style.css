@@ -1,0 +1,58 @@
+/* https://coolors.co/cdc392-8b5d33-c6caed-1d201f-171a21
+Sage #CDC392
+Coyote Brown #8B5D33
+Lavender Blue #C6CAED
+Eerie Black #1D201F
+Raisin Black #171A21 */
+
+/* General ********************************* */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* Navbar ********************************* */
+.navbar {
+   font-family: "Muli","Helvetica Neue",Helvetica,Arial,sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+ 
+
+/* Welcome ********************************* */
+
+
+.intro-info{
+    color: rgba(23, 26, 33, 0.7);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.8em;
+}
+.intro-info strong {
+    font-weight: 700;
+}
+
+.intro-info p::after {
+    background: #8B5D33;
+    content: "";
+    width: 3em;
+    height: 5px;
+    display: block;
+    margin-top: 0.6em;
+    margin-left: 9.8em;
+}
+
+.intro-info::before {
+    background: #8B5D33;
+    content: "";
+    width: 3em;
+    height: 5px;
+    display: block;
+    margin-bottom: 0.6em;
+    margin-left: 9.8em;
+}
+
+
+
