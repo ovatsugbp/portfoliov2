@@ -6,7 +6,9 @@ Eerie Black #1D201F
 Raisin Black #171A21 */
 
 /* General ********************************* */
-
+.row {
+    margin: 0;
+}
 html {
     box-sizing: border-box;
 }
@@ -60,10 +62,7 @@ html {
 
 
 /* About ********************************* */
-.skills {
-    margin-left: 1.6em;
 
-}
 .skills img {
     width: 15%;
     padding: .3em;
@@ -75,7 +74,7 @@ html {
     font-family: 'Baloo Tammudu 2', cursive;
     font-size: 34px;
     font-weight: bold;
-    padding: 14px 0;
+    padding: 14px 50px;
     color: rgba(23, 26, 33, 0.7);
     
 }
@@ -102,7 +101,7 @@ html {
 }
 
 .facts-about h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-family: 'Baloo Tammudu 2', cursive;
     color: rgba(23, 26, 33, 0.4);
 }
