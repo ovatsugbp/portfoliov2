@@ -19,7 +19,7 @@ html {
    text-transform: uppercase;
    letter-spacing: 1px;
 }
- 
+
 
 /* Welcome ********************************* */
 
@@ -41,18 +41,99 @@ html {
     height: 5px;
     display: block;
     margin-top: 0.6em;
-    margin-left: 9.8em;
+    margin-left: 1.5em;
 }
 
 .intro-info::before {
     background: #8B5D33;
+    text-align: end;
     content: "";
     width: 3em;
     height: 5px;
     display: block;
     margin-bottom: 0.6em;
-    margin-left: 9.8em;
+    margin-left: 1.5em;
+}
+.funko img{
+    width: 100%;
 }
 
+
+/* About ********************************* */
+.skills {
+    margin-left: 1.6em;
+
+}
+.skills img {
+    width: 15%;
+    padding: .3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    
+}
+.skills h3{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 34px;
+    font-weight: bold;
+    padding: 14px 0;
+    color: rgba(23, 26, 33, 0.7);
+    
+}
+.skills h3::after {
+    background: #8B5D33;
+    content: "";
+    width: 1em;
+    height: 5px;
+    display: block;
+    margin-top: 0.6em;
+    margin-left: .5em;
+}
+
+.facts-about {
+    font-weight: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+.facts-about h2 {
+    font-size: 1.1em;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: rgba(23, 26, 33, 0.4);
+}
+
+.bio {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 3em;
+    padding-right: 3m;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 100;
+    color: rgba(23, 26, 33, 0.9);
+}
+
+.bio h4 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 34px;
+    font-weight: bold;
+    padding: 14px 0;
+    color: rgba(23, 26, 33, 0.7);
+}
+
+.bio h4::after {
+    background: #8B5D33;
+    content: "";
+    width: 1em;
+    height: 5px;
+    display: block;
+    margin-top: 0.6em;
+    margin-left: .5em;
+}
 
 
