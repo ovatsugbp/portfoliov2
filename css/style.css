@@ -25,7 +25,9 @@ html {
 
 /* Welcome ********************************* */
 
-
+#head {
+    margin-top: 5em;
+}
 .intro-info{
     color: rgba(23, 26, 33, 0.7);
     font-weight: 300;
@@ -66,16 +68,22 @@ html {
 
 .skills img {
     width: 15%;
-    padding: .3em;
+    padding: .5em;
     margin-bottom: 3em;
-    margin-left: 3em;
+}
+.img-postion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 .skills h3{
-    font-family: 'Baloo Tammudu 2', cursive;
-    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
     font-weight: bold;
-    padding: 14px 50px;
+    padding-left: 5%;
+    padding-right: 5%;
     color: rgba(23, 26, 33, 0.7);
     
 }
@@ -86,55 +94,88 @@ html {
     height: 5px;
     display: block;
     margin-top: 0.6em;
-    margin-left: .5em;
 }
 
 .facts-about {
-    font-weight: 100;
     padding-left: 5%;
     padding-right: 5%;
-    
+    margin: 4em 1em;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
-
 }
 
 .facts-about h2 {
-    font-size: 1.5em;
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
     color: rgba(23, 26, 33, 0.4);
+    
 }
 
 .bio {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 3em;
-    padding-right: 3m;
     font-size: 15px;
     line-height: 2;
     font-weight: 100;
     color: rgba(23, 26, 33, 0.9);
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.bio h4 {
-    font-family: 'Baloo Tammudu 2', cursive;
-    font-size: 34px;
+.bio h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
     font-weight: bold;
     padding: 14px 0;
     color: rgba(23, 26, 33, 0.7);
+    padding-left: 5%;
 }
 
-.bio h4::after {
+.bio h3::after {
     background: #8B5D33;
     content: "";
     width: 1em;
     height: 5px;
     display: block;
     margin-top: 0.6em;
-    margin-left: .5em;
+
+}
+.bio p {
+    margin-left: 3%;
 }
 
 
+/* Portfolio ********************************* */
 
+
+.portfolio h2 {
+    font-weight: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(23, 26, 33, 0.8);
+    line-height: 1.5;
+    text-align: center;
+
+    margin-top: 100px;
+
+}
+
+.portfolio p {
+    font-size: 1.2em;
+    font-family: ''Open Sans', sans-serif';
+    color: rgba(23, 26, 33, 0.4);
+    text-align: center;
+}
+.space {
+    width: 100px;
+    height: 4px;
+    background-color: #8B5D33;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
