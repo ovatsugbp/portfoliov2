@@ -16,8 +16,9 @@
   <title>Gustavo Goulart | Front-end Developer</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<body data-spy="scroll" data-target="#navbar-example2">
+  <nav id="navbar-example2" class="navbar navbar-custom navbar-expand-lg navbar-light bg-light fixed-top"
+    role="tab-list">
     <div class="container">
       <a class="navbar-brand" href="#">Gustavo Goulart</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -28,14 +29,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="mr-auto"></div>
         <ul class=" navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Welcome</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome">Welcome</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projetcs">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Education</a>
@@ -51,65 +52,75 @@
 
     </div>
   </nav>
-  <section id="head">
-    <div class=" container" id="banner">
-      <div class="row">
-        <div class="col-sm-6 align-self-center intro-info">
-          <h1>Hey, I'm <strong>Gustavo Goulart</strong></h1>
-          <p>Front-end Developer</p>
+  <div id="welcome" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
+    <section class="head">
+      <div class=" container" id="banner">
+        <div class="row">
+          <div class="col-sm-6 align-self-center intro-info">
+            <h1>Hey, I'm <strong>Gustavo Goulart</strong></h1>
+            <p>Front-end Developer</p>
+
+          </div>
+          <div class="col-sm-6 funko">
+            <img src="./css/img/39fbad41348257219744ec9c72147cdc.png"
+              alt="Representação do boneco Funko Pop de Gustavo">
+          </div>
         </div>
-        <div class="col-sm-6 funko">
-          <img src="./css/img/39fbad41348257219744ec9c72147cdc.png" alt="Representação do boneco Funko Pop de Gustavo">
-        </div>
+
       </div>
 
-    </div>
+    </section>
 
-  </section>
-
-  <div class="row">
-    <div class="col facts-about">
-      <h2>Short facts about me</h2>
-    </div>
-    <section class="row">
-      <div class="col-sm-6 skills">
-        <h3> Skills</h3>
-        <div class="img-postion">
-          <img src="./css/img/file_type_html_icon_130541.png" alt="html icon">
-          <img src="./css/img/file_type_css_icon_130661.png" alt="css icon">
-          <img src="./css/img/bootstrap_plain_logo_icon_146619.png" alt="bootstrap icon">
-          <img src="./css/img/javascript_plain_logo_icon_146454.png" alt="javascript icon">
-          <img src="./css/img/docker_plain_logo_icon_146554.png" alt="docker icon">
-        </div>
+    <div id="about" class="row">
+      <div class="col facts-about">
+        <h2>Short facts about me</h2>
       </div>
-      <div class="col-sm-6 bio">
-        <h3> About me</h3>
-        <p>My name is Gustavo Goulart. I'm a 28 year old multi talent from Minas
-          Gerais, Brazil.</p>
-        <p> I'm Front-end
-          developer freelancer and always improving my knowledge and practicing what I've learned. I'm creative and
-          motivated
-          professional working to give you the best experience.</p>
-        <p>I love to find solutions and for me if you have a
-          problem I have a challenge.</p>
+      <section class="row">
+        <div class="col-sm-6 skills">
+          <h3> Skills</h3>
+          <div class="img-postion">
+            <img src="./css/img/file_type_html_icon_130541.png" alt="html icon">
+            <img src="./css/img/file_type_css_icon_130661.png" alt="css icon">
+            <img src="./css/img/bootstrap_plain_logo_icon_146619.png" alt="bootstrap icon">
+            <img src="./css/img/javascript_plain_logo_icon_146454.png" alt="javascript icon">
+            <img src="./css/img/docker_plain_logo_icon_146554.png" alt="docker icon">
+          </div>
+        </div>
+        <div class="col-sm-6 bio">
+          <h3> About me</h3>
+          <p>My name is Gustavo Goulart. I'm a 28 year old multi talent from Minas
+            Gerais, Brazil.</p>
+          <p> I'm Front-end
+            developer freelancer and always improving my knowledge and practicing what I've learned. I'm creative and
+            motivated
+            professional working to give you the best experience.</p>
+          <p>I love to find solutions and for me if you have a
+            problem I have a challenge.</p>
+        </div>
+      </section>
+    </div>
+    <section class="portfolio" id="projetcs">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Projects</h2>
+            <p>Projects I worked on</p>
+            <div class="space"></div>
+          </div>
+        </div>
+        <div class="portfolio-grid row">
+          <div class="col-sm-4 portphotos"><img
+              src="/css/img/68747470733a2f2f696b2e696d6167656b69742e696f2f6361706974616f2f50726f6666792f66696e616c5f313539363738313933375f75726741556f50432d2e6a7067.jfif"
+              alt="proffy webpage"></div>
+          <div class="col-sm-4 portphotos"><img src="/css/img/jane.jpg" alt="muscian webpage"></div>
+          <div class="col-sm-4 portphotos"><img src="/css/img/screenshot.png" alt="pick your color webpage"></div>
+
+        </div>
+
       </div>
     </section>
   </div>
-  <section class="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Projects</h2>
-          <p>Projects I worked on</p>
-          <div class="space"></div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
