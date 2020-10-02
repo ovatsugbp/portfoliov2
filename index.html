@@ -17,10 +17,9 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example2">
-  <nav id="navbar-example2" class="navbar navbar-custom navbar-expand-lg navbar-light bg-light fixed-top"
-    role="tab-list">
+  <nav id="navbar-example2" class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top" role="tab-list">
     <div class="container">
-      <a class="navbar-brand" href="#">Gustavo Goulart</a>
+      <span class="logo-style">Gustavo</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,10 +38,10 @@
             <a class="nav-link" href="#projetcs">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Education</a>
+            <a class="nav-link" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"> Blog</a>
@@ -71,35 +70,42 @@
       </div>
 
     </section>
-
-    <div id="about" class="row">
-      <div class="col facts-about">
-        <h2>Short facts about me</h2>
-      </div>
-      <section class="row">
-        <div class="col-sm-6 skills">
-          <h3> Skills</h3>
-          <div class="img-postion">
-            <img src="./css/img/file_type_html_icon_130541.png" alt="html icon">
-            <img src="./css/img/file_type_css_icon_130661.png" alt="css icon">
-            <img src="./css/img/bootstrap_plain_logo_icon_146619.png" alt="bootstrap icon">
-            <img src="./css/img/javascript_plain_logo_icon_146454.png" alt="javascript icon">
-            <img src="./css/img/docker_plain_logo_icon_146554.png" alt="docker icon">
+    <section id="about-me">
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="130" width="100%" xmlns="http://www.w3.org/2000/svg"
+        version="1.1" class="svg-color-light">
+        <path d="M0 0 L50 50 L100 0 z"></path>
+      </svg>
+      <div id="about" class="row">
+        <div class="col facts-about">
+          <h3>Short facts about me</h3>
+        </div>
+        <section class="row">
+          <div class="col-sm-6 skills">
+            <h3> Skills</h3>
+            <section class="d-flex justify-content-center">
+              <img src="./css/img/file_type_html_icon_130541.png" alt="html icon">
+              <img src="./css/img/file_type_css_icon_130661.png" alt="css icon">
+              <img src="./css/img/bootstrap_plain_logo_icon_146619.png" alt="bootstrap icon">
+              <img src="./css/img/javascript_plain_logo_icon_146454.png" alt="javascript icon">
+              <img src="./css/img/docker_plain_logo_icon_146554.png" alt="docker icon">
+              </s>
           </div>
-        </div>
-        <div class="col-sm-6 bio">
-          <h3> About me</h3>
-          <p>My name is Gustavo Goulart. I'm a 28 year old multi talent from Minas
-            Gerais, Brazil.</p>
-          <p> I'm Front-end
-            developer freelancer and always improving my knowledge and practicing what I've learned. I'm creative and
-            motivated
-            professional working to give you the best experience.</p>
-          <p>I love to find solutions and for me if you have a
-            problem I have a challenge.</p>
-        </div>
-      </section>
-    </div>
+          <div class="col-sm-6 bio">
+            <h3> About me</h3>
+            <p>My name is Gustavo Goulart. I'm a 28 year old multi talent from Minas
+              Gerais, Brazil.</p>
+            <p> I'm Front-end
+              developer freelancer and always improving my knowledge and practicing what I've learned. I'm creative and
+              motivated
+              professional working to give you the best experience.</p>
+            <p>I love to find solutions and for me if you have a
+              problem I have a challenge.</p>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
     <section class="portfolio" id="projetcs">
       <div class="container">
         <div class="row">
@@ -110,16 +116,133 @@
           </div>
         </div>
         <div class="portfolio-grid row">
-          <div class="col-sm-4 portphotos"><img
-              src="/css/img/68747470733a2f2f696b2e696d6167656b69742e696f2f6361706974616f2f50726f6666792f66696e616c5f313539363738313933375f75726741556f50432d2e6a7067.jfif"
-              alt="proffy webpage"></div>
-          <div class="col-sm-4 portphotos"><img src="/css/img/jane.jpg" alt="muscian webpage"></div>
-          <div class="col-sm-4 portphotos"><img src="/css/img/screenshot.png" alt="pick your color webpage"></div>
+          <div class="col-sm-4 portphotos">
+            <div class="card bg-dark text-white ovl">
+              <img class="card-img"
+                src="/css/img/68747470733a2f2f696b2e696d6167656b69742e696f2f6361706974616f2f50726f6666792f66696e616c5f313539363738313933375f75726741556f50432d2e6a7067.jfif"
+                alt="Card image">
+              <div class="card-img-overlay ovl">
+                <h5 class="card-title">Proffy Plataform</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 portphotos">
+            <div class="card bg-dark text-white ovl">
+              <img class="card-img" src="/css/img/jane.jpg" alt="Card image">
+              <div class="card-img-overlay ovl">
+                <h5 class="card-title">Musician Website</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 portphotos">
+            <div class="card bg-dark text-white ovl">
+              <img class="card-img" src="/css/img/screenshot.png" alt="Card image">
+              <div class="card-img-overlay ovl">
+                <h5 class="card-title">Pick your RGB</h5>
+              </div>
+            </div>
+          </div>
 
         </div>
 
       </div>
     </section>
+
+    <div class="container" id="education">
+      <div class="row">
+        <div class="col">
+          <h2>Education</h2>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <div class="main-timeline4">
+              <div class="timeline">
+                <article class="timeline-content">
+                  <span class="year">2020</span>
+                  <div class="inner-content">
+                    <h3 class="title">Front-end</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt
+                      eu, suscipit a orci. In suscipit quam eget dui auctor.
+                    </p>
+                  </div>
+                  </>
+              </div>
+              <div class="timeline">
+                <article class="timeline-content">
+                  <span class="year">2020</span>
+                  <div class="inner-content">
+                    <h3 class="title">Programador Web</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt
+                      eu, suscipit a orci. In suscipit quam eget dui auctor.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="timeline">
+                <article class="timeline-content">
+                  <span class="year">2020</span>
+                  <div class="inner-content">
+                    <h3 class="title">Bootcamp Desenvolvedor Full Stack</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt
+                      eu, suscipit a orci. In suscipit quam eget dui auctor.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="contact">
+      <div class="row">
+        <div class="col contact">
+          <h2>Contact</h2>
+          <p>Leave me a message!</p>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col form">
+          <form action="">
+            <input type="text" name="nome" placeholder="Name" required> <br>
+            <input type="email" name="email" placeholder="Email" required> <br>
+            <textarea name="message" id="message" cols="40" rows="5" placeholder="Message"></textarea><br>
+            <button class="btn">Send your message</button>
+          </form>
+
+        </div>
+      </div>
+      <div class="row social-display">
+
+        <a href="https://www.linkedin.com/in/goulartgb/" class="social-media" target="blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
+          </svg>
+        </a>
+        <a href="https://github.com/ovatsugbp" class="social-media" target="blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z" />
+          </svg>
+        </a>
+        <a href="https://twitter.com/gustgoulart" class="social-media" target="blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z" />
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
 
   <!-- Optional JavaScript -->
