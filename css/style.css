@@ -18,11 +18,12 @@ html {
 
 /* Navbar ********************************* */
 .navbar {
-   font-family: "Muli","Helvetica Neue",Helvetica,Arial,sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   font-size: 10px;
-   background-color: #d6b371e5;
+    font-family: "Muli","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    background-color: #d6b371e5;
+    min-height: 20px;
 
 }
 
@@ -119,9 +120,10 @@ svg:not(:root) {
 }
 
 .skills img {
-    width: 15%;
+    width: 20%;
     padding: .5em;
     margin-bottom: 3em;
+    display: inline-block;
 }
 
 .skills h3{
@@ -441,6 +443,10 @@ svg:not(:root) {
     border-radius: 5px;
     box-shadow: 1px 1px 1px #999;
     resize: none;
+}
+.inputRequired::placeholder{
+    color: #8B5D33;
+    opacity: .6;
 }
 button{
     background:#b8ae7d;

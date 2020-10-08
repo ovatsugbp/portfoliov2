@@ -17,9 +17,10 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example2">
-  <nav id="navbar-example2" class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top" role="tab-list">
+  <nav id="navbar-example2" class="navbar navbar-custom navbar-expand-lg py-1 navbar-light fixed-top" role="tab-list">
     <div class="container align-items-center">
       <span class="logo-style">Gustavo</span>
+      <span class="navbar-brand"></span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -82,7 +83,7 @@
         <section class="row">
           <div class="col-sm-6 skills">
             <h3> Skills</h3>
-            <section class="d-flex justify-content-center">
+            <section class="skills-logo d-flex align-items-center mx-auto" style="width: 300px;">
               <img src="./css/img/file_type_html_icon_130541.png" alt="html icon">
               <img src="./css/img/file_type_css_icon_130661.png" alt="css icon">
               <img src="./css/img/bootstrap_plain_logo_icon_146619.png" alt="bootstrap icon">
@@ -169,10 +170,10 @@
               <article class="timeline-content">
                 <span class="year">2020</span>
                 <div class="inner-content">
-                  <h3 class="title">Front-end</h3>
+                  <h3 class="title">Front-end Coding Course</h3>
                   <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt
-                    eu, suscipit a orci. In suscipit quam eget dui auctor.
+                    Concluded at Digital House where I could learn and improve Hard Skills (like HTML, CSS, JavaScript,
+                    Reactive and Bootstrap) and Soft Skills (Git and agile/Scrum).
                   </p>
                 </div>
                 </>
@@ -181,10 +182,10 @@
               <article class="timeline-content">
                 <span class="year">2020</span>
                 <div class="inner-content">
-                  <h3 class="title">Programador Web</h3>
+                  <h3 class="title">UI/UX Basics</h3>
                   <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt
-                    eu, suscipit a orci. In suscipit quam eget dui auctor.
+                    Experience, Interface & Prototype: basics instructions about Apps design how users experience them,
+                    incluiding notions about proptotype creation.
                   </p>
                 </div>
               </article>
@@ -195,8 +196,8 @@
                 <div class="inner-content">
                   <h3 class="title">Bootcamp Desenvolvedor Full Stack</h3>
                   <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt
-                    eu, suscipit a orci. In suscipit quam eget dui auctor.
+                    Application building techniques exloring Front and Back-End, besides versioning control like Git and
+                    Cloud Deployment.
                   </p>
                 </div>
               </article>
@@ -216,10 +217,11 @@
     <div class="row">
       <div class="col form">
         <form id="contactForm">
-          <input type="text" name="nome" placeholder="Name" id="name" required class="inputRequired"> <br>
-          <input type="email" name="email" placeholder="Email" required id="email" class="inputRequired"> <br>
-          <textarea name="message" id="message" cols="40" rows="5" placeholder="Message" required id="message"
-            class="inputRequired"></textarea><br>
+          <input type="text" name="nome" placeholder="Name" id="name" required class="inputRequired nameInput"> <br>
+          <input type="email" name="email" placeholder="Email" required id="email" class="inputRequired">
+          <br>
+          <textarea name="message" id="message" cols="40" rows="5" placeholder="Let's Talk! Send me your message (:"
+            required id="message" class="inputRequired"></textarea><br>
           <button id="sendButton">Send your message</button>
         </form>
 

@@ -7,11 +7,11 @@ const inputRequired = document.querySelectorAll('.inputRequired');
 
 
 
-window.addEventListener('load', () => {
-    contactForm.addEventListener('submit', evt => {
-        evt.preventDefault();
-    })
-})
+// window.addEventListener('load', () => {
+//     contactForm.addEventListener('submit', evt => {
+//         evt.preventDefault();
+//     })
+// })
 
 
 // function formReady() {
@@ -22,6 +22,8 @@ window.addEventListener('load', () => {
 //     name.addEventListener('keyup', handleTyping);
 //     email.addEventListener('keyup', handleTyping);
 //     message.addEventListener('keyup', handleTyping);
+
+//     console.log(name)
 // }
 
 // formReady();
