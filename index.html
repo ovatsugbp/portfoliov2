@@ -17,7 +17,8 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example2">
-  <nav id="navbar-example2" class="navbar navbar-custom navbar-expand-lg py-1 navbar-light fixed-top" role="tab-list">
+  <nav id="navbar-example2" class="navbar navbar-xs navbar-custom navbar-expand-lg py-1 navbar-light fixed-top"
+    role="tab-list">
     <div class="container align-items-center">
       <span class="logo-style">Gustavo</span>
       <span class="navbar-brand"></span>
@@ -216,14 +217,21 @@
     </div>
     <div class="row">
       <div class="col form">
-        <form id="contactForm">
-          <input type="text" name="nome" placeholder="Name" id="name" required class="inputRequired nameInput"> <br>
-          <input type="email" name="email" placeholder="Email" required id="email" class="inputRequired">
-          <br>
-          <textarea name="message" id="message" cols="40" rows="5" placeholder="Let's Talk! Send me your message (:"
-            required id="message" class="inputRequired"></textarea><br>
-          <button id="sendButton">Send your message</button>
+        <form id="contactForm" action="https://formspree.io/f/mbjpdbja" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" id="name" class="inputRequired nameInput" placeholder="Name"> <br>
+
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" class="inputRequired" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" cols="40" rows="5""
+            id=" message" class="inputRequired" placeholder="Let's talk! Send me a message"></textarea><br>
+          </div>
+          <button id="sendButton" type="submit">Send</button>
         </form>
+        <div id="statusForm"></div>
 
       </div>
     </div>

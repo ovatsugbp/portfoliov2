@@ -23,9 +23,9 @@ html {
     letter-spacing: 1px;
     font-size: 10px;
     background-color: #d6b371e5;
-    min-height: 20px;
 
 }
+    
 
 .navbar-nav .active{
     border-bottom: 3px solid #8B5D33;
@@ -50,12 +50,16 @@ html {
 }
 
 .logo-style {
-    border: 5px solid white;
+    border: 3px solid white;
     font-size: 14px;
     color: white;
     padding-left: 8px;
-    padding-right: 8px
+    padding-right: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
+
+
 .logo-style:hover{
     color: #8B5D33;
     font-weight: bold;
@@ -421,7 +425,7 @@ svg:not(:root) {
     text-align: center;
 }
 #contact {
-    background-color: #CDC392;
+    background: #CDC392;
     text-align: center;
 
 }
@@ -429,18 +433,26 @@ svg:not(:root) {
     width: 300px;
     margin-bottom: .7em;
     background-color: #b8ae7d;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #8B5D33;
+    outline: none;
+    border-radius: 10px;
     color: #8B5D33;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: .95rem;
     box-shadow: 1px 1px 1px #999;
 }
 .form textarea {
     width: 300px;
     margin-bottom: .7em;
     background-color: #b8ae7d;
-    border: none;
+    border: 1px solid #8B5D33;
+    outline: none;
     color: #8B5D33;
-    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: .95rem;
+    border-radius: 10px;
     box-shadow: 1px 1px 1px #999;
     resize: none;
 }
@@ -461,15 +473,13 @@ button{
     transition:800ms ease all;
     outline:none;
     margin-top: 1.9em;
-    margin-bottom: 4em;
+    
 }
 button:hover{
     background:#b8ae7d;
     color:#8B5D33;
     }
-.formActive {
-    background: tomato;
-}
+
 button:before,button:after{
     content:'';
     position:absolute;
@@ -490,6 +500,36 @@ button:hover:before,button:hover:after{
     width:100%;
     transition:800ms ease all;
 }
+#statusForm{
+    padding: 0;
+    width: 23%;
+    margin: 2em auto;
+}
+.success{
+    border-bottom: 2px solid rgb(9, 179, 9);    
+    color: #8B5D33;
+    animation: status 4s ease forwards;
+}
+
+.error {
+    border-bottom: 2px solid tomato;  
+    color: #8B5D33;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        position: none;
+    }
+}
 
 .social-media {
     text-align: center;
@@ -507,6 +547,7 @@ button:hover:before,button:hover:after{
     padding-bottom: 2em;
     
 }
+
 
 
 /* MEDIA QUERY  *******************************/
@@ -573,5 +614,10 @@ button:hover:before,button:hover:after{
 
     .main-timeline4 .inner-content {
         padding: 20px
+    }
+    #statusForm{
+        padding: 0;
+        width: 60%;
+        margin: 2em auto;
     }
 }
