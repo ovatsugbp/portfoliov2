@@ -638,4 +638,18 @@ button:hover:before,button:hover:after{
         width: 60%;
         margin: 2em auto;
     }
+    .posts {
+        width: 80%;
+        height: 9em;
+        border: 3px dashed #8B5D33;
+        margin: 0 auto;
+        color: rgba(139, 93, 51, .9);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+    
 }
