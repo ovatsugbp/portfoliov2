@@ -36,6 +36,9 @@ html {
 .nav-link:hover{
     font-weight: bold;
 }
+.navbar-toggler{
+    margin: 10px 0;
+}
 
 
 /* Welcome ********************************* */
@@ -60,11 +63,6 @@ html {
 }
 
 
-.logo-style:hover{
-    color: #8B5D33;
-    font-weight: bold;
-    border: 5px solid #8B5D33;;
-}
 
 .intro-info{
     color: rgba(23, 26, 33, 0.7);
@@ -80,22 +78,22 @@ html {
 .intro-info p::after {
     background: #8B5D33;
     content: "";
-    width: 3em;
+    width: 35px;
     height: 5px;
     display: block;
     margin-top: 0.6em;
-    margin-left: 1.5em;
+    margin-left: 10px;
 }
 
 .intro-info::before {
     background: #8B5D33;
     text-align: end;
     content: "";
-    width: 3em;
+    width: 35px;
     height: 5px;
     display: block;
     margin-bottom: 0.6em;
-    margin-left: 1.5em;
+    margin-left: 10px;
 }
 .funko img{
     width: 100%;
@@ -547,7 +545,27 @@ button:hover:before,button:hover:after{
     padding-bottom: 2em;
     
 }
+.social-m-blog{
+    text-align: center;
+    padding: 2em;
+}
 
+
+/* Blog *******************************/
+
+.posts {
+    width: 70%;
+    height: 10em;
+    border: 3px dashed #8B5D33;
+    margin: 0 auto;
+    color: rgba(139, 93, 51, .9);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3em;
+}
 
 
 /* MEDIA QUERY  *******************************/

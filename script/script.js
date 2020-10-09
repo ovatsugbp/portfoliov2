@@ -11,13 +11,21 @@ window.addEventListener("load", function () {
         form.reset();
         status.classList.add('success')
         status.innerHTML = "<p>Thanks (:</p>"
+        clean();
 
     }
 
     function error() {
         status.classList.add('error')
         status.innerHTML = "<p>Oops! We have an error :(</p>"
-        form.reset();
+    }
+    function clean() {
+        if (status.classList.contains('success')) {
+            return status.classList.remove('success')
+        }
+        if (status.classList.contains('error')) {
+            return status.classList.remove('success')
+        }
     }
 
     // handle the form submission event
