@@ -25,6 +25,20 @@ html {
     background-color: #d6b371e5;
 
 }
+.logo-style {
+    border: 3px solid white;
+    font-size: 14px;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.logo-style:hover {
+text-decoration: none;
+color: white ;
+}
     
 
 .navbar-nav .active{
@@ -52,15 +66,6 @@ html {
     top: 20px;
 }
 
-.logo-style {
-    border: 3px solid white;
-    font-size: 14px;
-    color: white;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
 
 
 
@@ -528,6 +533,7 @@ button:hover:before,button:hover:after{
         position: none;
     }
 }
+
 
 .social-media {
     text-align: center;

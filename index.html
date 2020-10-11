@@ -12,15 +12,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="css/img/icons8-laptop-30.png" type="image/png">
 
   <title>Gustavo Goulart | Front-end Developer</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example2">
+
   <nav id="navbar-example2" class="navbar navbar-xs navbar-custom navbar-expand-lg py-1 navbar-light fixed-top"
     role="tab-list">
     <div class="container align-items-center">
-      <span class="logo-style">Gustavo</span>
+      <a href="index.html" class="logo-style">Gustavo</a>
       <span class="navbar-brand"></span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +39,7 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projetcs">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#education">Education</a>
@@ -53,107 +55,104 @@
 
     </div>
   </nav>
-  <div id="welcome" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
-    <section class="head">
-      <div class=" container" id="banner">
-        <div class="row">
-          <div class="col-sm-6 align-self-center intro-info">
-            <h1>Hey, I'm <strong>Gustavo Goulart</strong></h1>
-            <p>Front-end Developer</p>
+  <section class="head" id="welcome">
+    <div class=" container" id="banner">
+      <div class="row">
+        <div class="col-sm-6 align-self-center intro-info">
+          <h1>Hey, I'm <strong>Gustavo Goulart</strong></h1>
+          <p>Front-end Developer</p>
 
-          </div>
-          <div class="col-sm-6 funko">
-            <img src="./css/img/39fbad41348257219744ec9c72147cdc.png"
-              alt="Representação do boneco Funko Pop de Gustavo">
-          </div>
         </div>
-
-      </div>
-
-    </section>
-    <section id="about-me">
-      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="130" width="100%" xmlns="http://www.w3.org/2000/svg"
-        version="1.1" class="svg-color-light">
-        <path d="M0 0 L50 50 L100 0 z"></path>
-      </svg>
-      <div id="about" class="row">
-        <div class="col facts-about">
-          <h3>Short facts about me</h3>
-        </div>
-        <section class="row">
-          <div class="col-sm-6 skills">
-            <h3> Skills</h3>
-            <section class="skills-logo d-flex align-items-center mx-auto" style="width: 300px;">
-              <img src="./css/img/file_type_html_icon_130541.png" alt="html icon">
-              <img src="./css/img/file_type_css_icon_130661.png" alt="css icon">
-              <img src="./css/img/bootstrap_plain_logo_icon_146619.png" alt="bootstrap icon">
-              <img src="./css/img/javascript_plain_logo_icon_146454.png" alt="javascript icon">
-              <img src="./css/img/docker_plain_logo_icon_146554.png" alt="docker icon">
-            </section>
-          </div>
-          <div class="col-sm-6 bio">
-            <h3> About me</h3>
-            <p>My name is Gustavo Goulart. I'm a 28 year old multi talent from Minas
-              Gerais, Brazil.</p>
-            <p> I'm Front-end
-              developer freelancer and always improving my knowledge and practicing what I've learned. I'm creative and
-              motivated
-              professional working to give you the best experience.</p>
-            <p>I love to find solutions and for me if you have a
-              problem I have a challenge.</p>
-          </div>
-        </section>
-      </div>
-
-    </section>
-
-    <section class="portfolio" id="projetcs">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Projects</h2>
-            <p>Projects I worked on</p>
-            <div class="space"></div>
-          </div>
-        </div>
-        <div class="portfolio-grid row">
-          <a href="https://github.com/ovatsugbp/NLW" target="_blank">
-            <div class="col-sm-4 portphotos">
-              <div class="card bg-dark text-white ovl">
-                <img class="card-img"
-                  src="/css/img/68747470733a2f2f696b2e696d6167656b69742e696f2f6361706974616f2f50726f6666792f66696e616c5f313539363738313933375f75726741556f50432d2e6a7067.jfif"
-                  alt="Card image">
-                <div class="card-img-overlay ovl">
-                  <h5 class="card-title">Proffy Plataform</h5>
-                </div>
-          </a>
+        <div class="col-sm-6 funko">
+          <img src="./css/img/39fbad41348257219744ec9c72147cdc.png" alt="Representação do boneco Funko Pop de Gustavo">
         </div>
       </div>
-      <div class="col-sm-4 portphotos">
-        <a href="https://musicianpage.netlify.app/index.html" target="_blank">
-          <div class="card bg-dark text-white ovl">
-            <img class="card-img" src="/css/img/jane.jpg" alt="Card image">
-            <div class="card-img-overlay ovl">
-              <h5 class="card-title">Musician Website</h5>
-            </div>
+
+    </div>
+
+  </section>
+  <section id="about-me">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="130" width="100%" xmlns="http://www.w3.org/2000/svg"
+      version="1.1" class="svg-color-light">
+      <path d="M0 0 L50 50 L100 0 z"></path>
+    </svg>
+    <div id="about" class="row">
+      <div class="col facts-about">
+        <h3>Short facts about me</h3>
+      </div>
+      <section class="row">
+        <div class="col-sm-6 skills">
+          <h3> Skills</h3>
+          <section class="skills-logo d-flex align-items-center mx-auto" style="width: 300px;">
+            <img src="./css/img/file_type_html_icon_130541.png" alt="html icon">
+            <img src="./css/img/file_type_css_icon_130661.png" alt="css icon">
+            <img src="./css/img/bootstrap_plain_logo_icon_146619.png" alt="bootstrap icon">
+            <img src="./css/img/javascript_plain_logo_icon_146454.png" alt="javascript icon">
+            <img src="./css/img/docker_plain_logo_icon_146554.png" alt="docker icon">
+          </section>
+        </div>
+        <div class="col-sm-6 bio">
+          <h3> About me</h3>
+          <p>My name is Gustavo Goulart. I'm a 28 year old multi talent from Minas
+            Gerais, Brazil.</p>
+          <p> I'm Front-end
+            developer freelancer and always improving my knowledge and practicing what I've learned. I'm creative and
+            a professional worker, to give you the best experience.</p>
+          <p>I love to find solutions and for me if you have a
+            problem I have a challenge.</p>
+        </div>
+      </section>
+    </div>
+
+  </section>
+
+  <section class="portfolio" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Projects</h2>
+          <p>Projects I worked on</p>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="portfolio-grid row">
+        <a href="https://github.com/ovatsugbp/NLW" target="_blank">
+          <div class="col-sm-4 portphotos">
+            <div class="card bg-dark text-white ovl">
+              <img class="card-img"
+                src="/css/img/68747470733a2f2f696b2e696d6167656b69742e696f2f6361706974616f2f50726f6666792f66696e616c5f313539363738313933375f75726741556f50432d2e6a7067.jfif"
+                alt="Card image">
+              <div class="card-img-overlay ovl">
+                <h5 class="card-title">Proffy Platform</h5>
+              </div>
         </a>
       </div>
-  </div>
-  <div class="col-sm-4 portphotos">
-    <a href="https://pickrgb.netlify.app/" target="_blank">
-      <div class="card bg-dark text-white ovl">
-        <img class="card-img" src="/css/img/screenshot.png" alt="Card image">
-        <div class="card-img-overlay ovl">
-          <h5 class="card-title">Pick your RGB</h5>
-        </div>
-    </a>
-  </div>
-  </div>
+    </div>
+    <div class="col-sm-4 portphotos">
+      <a href="https://musicianpage.netlify.app/index.html" target="_blank">
+        <div class="card bg-dark text-white ovl">
+          <img class="card-img" src="/css/img/jane.jpg" alt="Card image">
+          <div class="card-img-overlay ovl">
+            <h5 class="card-title">Musician Website</h5>
+          </div>
+      </a>
+    </div>
+    </div>
+    <div class="col-sm-4 portphotos">
+      <a href="https://pickrgb.netlify.app/" target="_blank">
+        <div class="card bg-dark text-white ovl">
+          <img class="card-img" src="/css/img/screenshot.png" alt="Card image">
+          <div class="card-img-overlay ovl">
+            <h5 class="card-title">Pick your RGB</h5>
+          </div>
+      </a>
+    </div>
+    </div>
 
-  </div>
+    </div>
 
-  </div>
+    </div>
   </section>
 
   <div class="container" id="education">
@@ -186,7 +185,7 @@
                   <h3 class="title">UI/UX Basics</h3>
                   <p class="description">
                     Experience, Interface & Prototype: basics instructions about Apps design how users experience them,
-                    incluiding notions about proptotype creation.
+                    including notions about prototype creation.
                   </p>
                 </div>
               </article>
@@ -195,9 +194,10 @@
               <article class="timeline-content">
                 <span class="year">2020</span>
                 <div class="inner-content">
-                  <h3 class="title">Bootcamp Desenvolvedor Full Stack</h3>
+                  <h3 class="title">BootCamp Desenvolvedor Full Stack</h3>
                   <p class="description">
-                    Application building techniques exloring Front and Back-End, besides versioning control like Git and
+                    Application building techniques exploring Front and Back-End, besides versioning control like Git
+                    and
                     Cloud Deployment.
                   </p>
                 </div>

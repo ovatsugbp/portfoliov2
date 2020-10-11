@@ -11,13 +11,13 @@ window.addEventListener("load", function () {
         form.reset();
         status.classList.add('success')
         status.innerHTML = "<p>Thanks (:</p>"
-        clean();
 
     }
 
     function error() {
         status.classList.add('error')
         status.innerHTML = "<p>Oops! We have an error :(</p>"
+
     }
     function clean() {
         if (status.classList.contains('success')) {
