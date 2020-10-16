@@ -1,10 +1,10 @@
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
-const sendButton = document.querySelector('#sendButton')
+const sendButton = document.querySelector('#sendButton');
 const form = document.querySelector('#contactForm');
 const inputRequired = document.querySelectorAll('.inputRequired');
-const status = document.querySelector('#statusForm')
+const status = document.querySelector('#statusForm');
 
 
 window.addEventListener("load", function () {
@@ -16,13 +16,13 @@ window.addEventListener("load", function () {
 
     function success() {
         form.reset();
-        status.classList.add('success')
-        status.innerHTML = "<p>Thanks (:</p>"
+        status.classList.add('success');
+        status.innerHTML = "<p>Thanks (:</p>";
     }
 
     function error() {
-        status.classList.add('error')
-        status.innerHTML = "<p>Oops! We have an error :(</p>"
+        status.classList.add('error');
+        status.innerHTML = "<p>Oops! We have an error :(</p>";
     }
 
 });
@@ -50,4 +50,62 @@ function ajax(method, url, data, success, error) {
     xhr.send(data);
 }
 
+const menuItems = document.querySelectorAll(".navbar-nav a[href^='#']");
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+});
+
+function scrollToIdOnClick(event) {
+    event.preventDefault();
+    const section = getScrollTop(event.target);
+
+    smoothScroll(section);
+}
+
+
+function smoothScroll(section) {
+    // window.scroll({
+    //     top: section,
+    //     behavior: "smooth",
+    // });
+    smoothScrollTo(0, section);
+}
+
+function getScrollTop(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+
+}
+
+// 
+// Smooth scroll animation
+// @param {int} endX: destination x coordinate
+// @param {int} endY: destination y coordinate
+// @param {int} duration: animation duration in ms
+//
+function smoothScrollTo(endX, endY, duration) {
+    const startX = window.scrollX || window.pageXOffset;
+    const startY = window.scrollY || window.pageYOffset;
+    const distanceX = endX - startX;
+    const distanceY = endY - startY;
+    const startTime = new Date().getTime();
+
+    duration = typeof duration !== 'undefined' ? duration : 400;
+
+    // Easing function
+    const easeInOutQuart = (time, from, distance, duration) => {
+        if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
+        return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+    };
+
+    const timer = setInterval(() => {
+        const time = new Date().getTime() - startTime;
+        const newX = easeInOutQuart(time, startX, distanceX, duration);
+        const newY = easeInOutQuart(time, startY, distanceY, duration);
+        if (time >= duration) {
+            clearInterval(timer);
+        }
+        window.scroll(newX, newY);
+    }, 1000 / 60); // 60 fps
+}
 
